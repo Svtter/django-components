@@ -131,3 +131,12 @@ dependencies = [
 
 [tool.hatch.env.collectors.mkdocs.docs]
 path = "mkdocs.yml"
+
+[[tool.pdm.source]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+verify_ssl = false
+name = "pypi"
+[tool.pdm.dev-dependencies]
+dev = [
+    "whitenoise>=6.7.0",
+]
